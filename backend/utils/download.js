@@ -19,7 +19,7 @@ const downloadAudio = async (url) => {
     }
 
     // Download audio using yt-dlp (assumes it's in PATH)
-    const command = `yt-dlp -x --audio-format mp3 -o "${fullPath}" "${url}"`;
+    const command = `yt-dlp -x --audio-format mp3 --cookies-from-browser chrome -o "${fullPath}" "${url}"`;
     
     exec(command, (error, stdout, stderr) => {
       if (error) {
