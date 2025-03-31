@@ -18,7 +18,7 @@ export default defineConfig({
     },
   },
   server: {
-    port: 8000,
+    port: 5000,
     strictPort: true,
     host: true,
     open: false,
